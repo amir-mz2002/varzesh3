@@ -1,0 +1,263 @@
+@font-face {
+    font-family: iran-sans;
+    src: url(fonts/Iranian-Sans.woff);
+}
+
+
+* {
+    box-sizing: border-box !important;
+}
+
+a {
+    text-decoration: none !important;
+    color: inherit !important;
+    display: inline-block !important;
+}
+
+body {
+    margin: 0 !important;
+    font-family: iran-sans !important;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+header {
+    padding: 5px 0;
+    background: white;
+    z-index: 99;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03),
+    0 3px 6px rgba(0, 0, 0, 0.06);
+    background-image: url(img/ok-ok.jpg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: repeat;
+    filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
+
+    nav.navbar {
+        .container-fluid {
+
+            // background-color: white;
+            div.color {
+                // background-image: url(img/ok-ok.jpg) !important;
+                background-repeat: repeat;
+                background-position: center;
+                background-size: contain;
+                height: 100%;
+                z-index: 200;
+
+                @media screen and (min-width:800px) {
+                    width: 2%;
+                }
+
+                @media screen and (min-width:850px) {
+                    width: 8%;
+                }
+
+                @media screen and (min-width:900px) {
+                    width: 13%;
+                }
+
+                @media screen and (min-width:988px) {
+                    width: 23%;
+                }
+
+                @media screen and (min-width:1086px) {
+                    width: 30%;
+                }
+
+                @media screen and (min-width:1173px) {
+                    width: 35%;
+                }
+
+                @media screen and (min-width:1260px) {
+                    width: 40%;
+                }
+
+            }
+
+            padding: 5px 0;
+
+            .collapse {
+                .navbar-nav {
+                    .nav-item {
+                        padding: 0 10px;
+
+                        @media screen and (max-width:1200px) {
+                            padding: 0 8px;
+                        }
+
+                        @media screen and (max-width:1072px) {
+                            padding: 0 5px;
+                        }
+
+                        @media screen and (max-width:872px) {
+                            padding: 0;
+                        }
+
+                        @media screen and (max-width:767.9px) {
+                            background-color: white !important;
+                        }
+
+                        #active {
+                            color: $color-second  !important;
+
+                            &:hover {
+                                &::after {
+                                    width: 0;
+                                }
+                            }
+                        }
+
+                        .nav-link {
+                            position: relative;
+                            overflow: hidden;
+                            transition: 0.5s;
+                            font-weight: 900;
+                            text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.1) !important;
+
+
+                            &::after {
+                                content: "";
+                                width: 0;
+                                height: 2px;
+                                background-color: $color-second;
+                                position: absolute;
+                                left: 50%;
+                                bottom: 0;
+                            }
+
+                            &:hover {
+                                color: black;
+
+                                &::after {
+                                    left: 0;
+                                    width: 100%;
+                                    height: 100%;
+                                    background: linear-gradient(transparent, transparent, transparent, transparent, transparent, transparent, transparent, transparent, transparent, transparent, $color-second);
+                                    transition: 0.5s;
+                                    z-index: 0;
+                                }
+
+                                @media screen and (max-width:768px) {
+                                    &::after {
+                                        display: none;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+footer {
+    background-image: url(img/images.jpg);
+    background-repeat: repeat;
+    background-size: cover;
+
+    // padding: 50px 0;
+    @media screen and (max-width:767.9px) {
+        background-image: none;
+        background-color: white;
+    }
+
+    div {
+        backdrop-filter: blur(5px);
+        padding: 90px 0;
+        background-image: $back-9;
+        height: 100%;
+
+        ul {
+            li {
+                color: white;
+            }
+
+            .head {
+                font-weight: 900 !important;
+                font-size: 20px !important;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03), 0 3px 6px rgba(0, 0, 0, 0.06);
+            }
+
+            a {
+                transition: 0.5s;
+
+                &:hover {
+                    @media screen and (min-width:767.9px) {
+                        color: white !important;
+                        background-color: $color-second;
+                        transform: scale(0.9);
+                    }
+                }
+            }
+        }
+    }
+}
+
+// top-button
+div.top-button {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    right: 2%;
+    bottom: 2%;
+    background-color: $color-third;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 20;
+    transition: 0.5s;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+    &:hover {
+        background-color: white;
+
+        i {
+            color: $color-second;
+        }
+    }
+
+    i {
+        font-size: 27px;
+        color: white;
+        transition: 0.5s;
+    }
+}
+
+div.top-button:hover i {
+    color: #ff1f59;
+}
+
+/* ---------- */
+
+@media screen and (max-width:1280px) {
+    div.top-button {
+        width: 40px;
+        height: 40px;
+        right: 1%;
+        bottom: 1%;
+
+        i {
+            font-size: 20px;
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    div.top-button {
+        width: 30px;
+        height: 30px;
+        right: 1%;
+        bottom: 1%;
+
+        i {
+            font-size: 18px;
+        }
+    }
+}

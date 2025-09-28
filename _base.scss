@@ -1,0 +1,39 @@
+$color-main:#26408B;
+$color-second:#dc143c; /* crimson */
+$color-third:#007ba7;
+$color-fourth:#C2E7D9;
+$color-fiveth:#F8BA06;
+$color-sixth:#757575;
+$color-seventh:#35A655;
+$color-neutral:#f2f2f2;
+$color-black: black;
+$color-8:#a20016;
+
+
+$back-main:linear-gradient(to left, #0036A2, #0071C4);
+$back-second:linear-gradient(to left, #A6CFD5, #0071C4);
+$back-third:linear-gradient(to left,#0036A2,#0036A2, #0071C4, #0071C4,#A6CFD5, #A6CFD5,transparent,transparent);
+$back-fourth:radial-gradient(transparent,transparent,transparent,transparent,#0036A2,#0071C4,#A6CFD5, #A6CFD5, #0071C4,#0036A2);
+$back-fiveth:linear-gradient(to left,transparent,$color-main,#0071C4, #0071C4,$color-third, $color-fourth, $color-second, $color-fiveth,transparent);
+$back-sixth:linear-gradient(to left,transparent, #F8BA06, #E74436,transparent);
+$back-7:linear-gradient(to left, #dc143c,black, #007ba7);
+$back-8:radial-gradient(to left,transparent,transparent, #dc143c,black, #A6CFD5,transparent,transparent);
+$back-9:linear-gradient(to left, rgba(220, 20, 60,0.6),rgba(0, 0, 0,0.6), rgba(0, 123, 167,0.6));
+
+
+
+
+$box-shadow: -72vw 0 0 8px #78be1e,-65vw 0 0 8px #019e43,-58vw 0 0 8px #0182c6,0vw 0 0 8px #1d4f9b !important; 
+
+
+
+
+
+@keyframes ball {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(20deg);
+    }
+}

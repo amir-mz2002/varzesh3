@@ -1,0 +1,740 @@
+@import "base";
+@import "common";
+
+section.slid-and-news {
+    div.carousel {
+        div.carousel-indicators {
+            button {
+                background-color: white !important;
+                height: 22px !important;
+            }
+        }
+
+        div.carousel-inner {
+            div.carousel-item {
+                div.carousel-caption {
+                    text-shadow: 5px 5px 5px $color-black;
+                    background-image: radial-gradient(transparent, #007ba7);
+                    color: white;
+                    cursor: pointer;
+
+                    p {
+                        font-weight: 900;
+                    }
+                }
+            }
+        }
+    }
+
+    div.news {
+        div.accordion {
+            div.accordion-item {
+                h2.accordion-header {
+                    button {
+                        font-size: 19px !important
+                    }
+
+                    ;
+                }
+
+                div.accordion-body {
+                    height: 208px;
+                    overflow: auto;
+                    background-color: $color-neutral;
+
+                    ul {
+                        list-style: url(img/kjh.png);
+
+                        li {
+                            a {
+                                transition: 0.5s;
+                                border-bottom: 1px solid $color-main;
+
+                                @media screen and (max-width:500px) {
+                                    font-size: 12px;
+                                    font-weight: 900;
+                                }
+
+                                &:hover {
+                                    color: $color-second  !important;
+
+                                    @media screen and (max-width:576px) {
+                                        color: inherit !important;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                button.accordion-button {
+                    background-color: $color-second;
+                    color: white !important;
+                    font-weight: 900;
+                    outline: 0 !important;
+                    border: none !important;
+                    box-shadow: none !important;
+
+                    &::after {
+
+                        color: $color-second  !important;
+                        background-color: white !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+div.empty-color {
+    width: 100% !important;
+    height: 4px !important;
+    background-image: $back-sixth;
+}
+
+section.category {
+    div.container-xl {
+        ul.nav {
+            li {
+                box-shadow: rgba(0, 123, 167, 0.25) 0px 30px 60px -12px inset, rgba(0, 123, 167, 0.3) 0px 18px 36px -18px inset;
+
+                i {
+                    color: black !important;
+                }
+
+                a {
+                    transition: 0.5s;
+
+                    &:hover {
+                        letter-spacing: 1.5px;
+                    }
+                }
+
+                &:hover {
+                    i {
+                        animation: ball 1s infinite alternate;
+                        animation-fill-mode: forwards;
+                        animation-timing-function: linear;
+                        color: $color-second  !important;
+                    }
+                }
+
+                div.dropdown {
+                    button.btn {
+                        background-color: $color-neutral  !important;
+                        color: $color-black;
+                        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -3px 6px 0px inset;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+section.daakheli {
+    background-image: url(img/black.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-bottom: 300px !important;
+
+    .position-for-link {
+        @media screen and (min-width:992px) {
+            position: relative !important;
+            bottom: 90px !important;
+        }
+    }
+
+    div.title- {
+        h3 {
+            font-size: 32px !important;
+            font-weight: 800;
+            text-align: center;
+            position: relative;
+            color: $color-neutral;
+            padding-top: 0px;
+            text-shadow: 5px 5px 5px $color-black;
+            margin-bottom: 100px;
+
+            &::after {
+                content: "";
+                position: absolute !important;
+                bottom: -20px !important;
+                left: 50% !important;
+                transform: translate(-50%, -50%);
+                height: 7px !important;
+                width: 30% !important;
+                background-color: $color-second  !important;
+            }
+        }
+    }
+
+    div.goal-table {
+        @media screen and (max-width:767.9px) {
+            margin-bottom: 60px !important;
+        }
+
+        div.goal-table-item {
+            background-color: $color-neutral;
+
+            div.container {
+                display: flex;
+                align-items: center;
+            }
+
+            div.image-player {
+                width: 8%;
+
+                img {
+                    border-radius: 50%;
+                    width: 100%;
+                    display: block;
+                }
+            }
+
+            div.name-team {
+                width: 80%;
+                text-align: center;
+
+                span.team {
+                    color: white;
+                    font-weight: 900;
+                    background-color: $color-third;
+                    padding: 2px 3px;
+                    cursor: pointer;
+                    transition: 00.5s;
+
+                    &:hover {
+                        background-color: $color-second  !important;
+                    }
+                }
+            }
+
+            div.goal {
+                width: 10%;
+                text-align: left !important;
+
+                span {
+                    background-color: $color-second;
+                    padding: 5px;
+                    color: white;
+                }
+            }
+        }
+    }
+
+    div.pass-table {
+        div.pass-table-item {
+            background-color: $color-neutral;
+
+            div.container {
+                display: flex;
+                align-items: center;
+            }
+
+            div.image-player {
+                width: 8%;
+
+                img {
+                    border-radius: 50%;
+                    width: 100%;
+                    display: block;
+                }
+            }
+
+            div.name-team {
+                width: 80%;
+                text-align: center;
+
+                span.team {
+                    color: white;
+                    font-weight: 900;
+                    background-color: $color-third;
+                    padding: 2px 3px;
+                    cursor: pointer;
+                    transition: 00.5s;
+
+                    &:hover {
+                        background-color: $color-second  !important;
+                    }
+                }
+            }
+
+            div.pass {
+                width: 10%;
+                text-align: left !important;
+
+                span {
+                    background-color: $color-second;
+                    padding: 5px;
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+section.volleyball {
+    background-image: url(img/valboena.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-bottom: 50px !important;
+    div.title- {
+        h3 {
+            font-size: 32px !important;
+            font-weight: 800;
+            text-align: center;
+            position: relative;
+            color: $color-neutral;
+            padding-top: 0px;
+            text-shadow: 5px 5px 5px $color-black;
+            margin-bottom: 100px;
+
+            &::after {
+                content: "";
+                position: absolute !important;
+                bottom: -20px !important;
+                left: 50% !important;
+                transform: translate(-50%, -50%);
+                height: 7px !important;
+                width: 30% !important;
+                background-color: $color-second  !important;
+            }
+        }
+    }
+    div.content-volleyball-games-table {
+        div.set-table {
+            // text-align: center;
+            background-color: $color-third;
+        }
+        
+        div.content-volleyball-games-table-item{
+            display: flex;
+            // padding: 3px 0;
+            background-color: $color-neutral;
+            border-bottom: 2px solid black;
+            div.team-volleyball{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                width: 20%;
+                background-color: $color-third;
+                padding: 2px 0;
+                // border-top: 2px solid white;
+                span{
+                    font-size: 15px;
+                    color: white !important;
+                    
+                }
+            }
+            div.score-volleyball{
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                width: 20%;
+                text-align: center;
+                background-color: $color-second;
+                // border-top: 2px solid white;
+                span{
+                    color: white;
+
+                }
+            }
+            div.container-set-table{
+                width: 60%;
+                text-align: center;
+            }
+        }
+
+        
+
+        div.goal-table {
+            @media screen and (max-width:767.9px) {
+                margin-bottom: 60px !important;
+            }
+
+            div.goal-table-item {
+                background-color: $color-neutral;
+
+                div.container {
+                    display: flex;
+                    align-items: center;
+                }
+
+                div.image-player {
+                    width: 8%;
+
+                    img {
+                        border-radius: 50%;
+                        width: 100%;
+                        display: block;
+                    }
+                }
+
+                div.name-team {
+                    width: 80%;
+                    text-align: center;
+
+                    span.team {
+                        color: white;
+                        font-weight: 900;
+                        background-color: $color-third;
+                        padding: 2px 3px;
+                        cursor: pointer;
+                        transition: 00.5s;
+
+                        &:hover {
+                            background-color: $color-second  !important;
+                        }
+                    }
+                }
+
+                div.goal {
+                    width: 10%;
+                    text-align: left !important;
+
+                    span {
+                        background-color: $color-second;
+                        padding: 5px;
+                        color: white;
+                    }
+                }
+            }
+        }
+
+        div.pass-table {
+            div.pass-table-item {
+                background-color: $color-neutral;
+
+                div.container {
+                    display: flex;
+                    align-items: center;
+                }
+
+                div.image-player {
+                    width: 8%;
+
+                    img {
+                        border-radius: 50%;
+                        width: 100%;
+                        display: block;
+                    }
+                }
+
+                div.name-team {
+                    width: 80%;
+                    text-align: center;
+
+                    span.team {
+                        color: white;
+                        font-weight: 900;
+                        background-color: $color-third;
+                        padding: 2px 3px;
+                        cursor: pointer;
+                        transition: 00.5s;
+
+                        &:hover {
+                            background-color: $color-second  !important;
+                        }
+                    }
+                }
+
+                div.pass {
+                    width: 10%;
+                    text-align: left !important;
+
+                    span {
+                        background-color: $color-second;
+                        padding: 5px;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+    .position-for-link {
+        @media screen and (min-width:992px) {
+            position: relative !important;
+            bottom: 100px !important;
+        }
+    }
+}
+
+
+
+
+/* common between sections */
+
+div.games-table {
+    @media screen and (max-width:767.9px) {
+        margin-bottom: 60px !important;
+    }
+
+    div.day-of-week {
+        background-color: black !important;
+        color: white !important;
+        text-align: center;
+
+        h5 {
+            font-size: 16px;
+            margin: 0;
+        }
+    }
+
+    div.content-games-table {
+        div.content-games-table-item {
+            // text-align: center;
+            background-color: $color-neutral;
+            border: 3px solid $color-second;
+            border-top: none;
+            display: flex;
+            // justify-content: space-between;
+            position: relative;
+            padding: 5px 0;
+
+            .score {
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                background-color: $color-second;
+                color: white;
+            }
+
+            .time {
+                background-color: white !important;
+                color: black !important;
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                border-bottom: 2px solid black;
+            }
+
+
+            .left {
+                position: absolute;
+                left: 5px;
+                bottom: 50%;
+                transform: translateY(50%);
+                cursor: pointer;
+                transition: 0.5s;
+
+                &:hover {
+                    color: white;
+                    background-color: $color-second;
+                }
+            }
+
+            .right {
+                transform: translateX(-5px) !important;
+                cursor: pointer;
+                transition: 0.5s;
+
+                &:hover {
+                    color: white;
+                    background-color: $color-second;
+                }
+            }
+
+        }
+
+        .without-border {
+            border-bottom: none !important;
+        }
+    }
+}
+
+div.title-table {
+    backdrop-filter: blur(20px) !important;
+
+    h4 {
+        font-size: 23px;
+        font-weight: 900;
+        color: black;
+        // text-shadow: 6px 6px 3px black;
+        position: relative;
+        text-align: center;
+        z-index: 3;
+        // margin: 0;
+
+        &::after {
+            content: "";
+            width: 100%;
+            height: 200%;
+            background-color: $color-neutral;
+            position: absolute;
+            bottom: 50%;
+            left: 50%;
+            transform: translate(-50%, 50%);
+            z-index: -1;
+        }
+
+    }
+
+    h4.world-cup {
+        color: white !important;
+
+        &::after {
+            background-image: $back-7  !important;
+        }
+    }
+}
+
+
+form {
+    backdrop-filter: blur(20px) !important;
+
+    div.select-option {
+        select {
+            background-color: $color-second  !important;
+            border: none;
+            color: white !important;
+
+        }
+    }
+}
+
+.border-three {
+    border: 3px solid $color-second  !important;
+    border-top: none !important;
+}
+
+
+
+
+
+
+
+
+
+
+div.league-table {
+    @media screen and (max-width:767.9px) {
+        margin-bottom: 60px !important;
+    }
+
+    div.day-of-week {
+        background-color: black !important;
+        color: white !important;
+        text-align: center;
+
+        h5 {
+            font-size: 16px;
+            margin: 0;
+        }
+    }
+
+
+    table {
+        width: 100%;
+
+        // margin: auto;
+        tr.head-table {
+            background-color: black;
+            border-left: 3px solid black;
+            border-right: 3px solid black;
+
+            // background-color: black;
+            th {
+                color: white;
+                // padding: 0 !important;
+                text-align: center !important;
+            }
+
+            .rank-table {
+                width: 10%;
+                background-color: $color-third;
+            }
+
+            .team-table {
+                width: 55%;
+            }
+
+            .game-table {
+                width: 17.5%;
+            }
+
+            .score-table {
+                width: 17.5%;
+                background-color: $color-second;
+            }
+        }
+
+        tr {
+            background-color: $color-neutral;
+
+            td.team-table {
+                transition: 0.5s;
+                cursor: pointer;
+
+                &:hover {
+                    color: white;
+                    background-color: $color-second;
+                }
+            }
+        }
+    }
+
+
+    div.content-league-table {
+        div.content-league-table-item {
+            // text-align: center;
+            background-color: white;
+            border: 3px solid $color-second;
+            border-top: none;
+            display: flex;
+        }
+
+        .without-border {
+            border-bottom: none !important;
+        }
+    }
+}
+
+
+section.khaareji {
+    background-image: url(img/tedi-1.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    // height: 100vh;
+    background-attachment: fixed;
+    padding-bottom: 150px;
+
+    .position-for-link {
+        
+        @media screen and (min-width:992px) {
+            position: relative !important;
+            bottom: 82.4px !important;
+        }
+
+    }
+
+    div.title- {
+        h3 {
+            font-size: 32px !important;
+            font-weight: 800;
+            text-align: center;
+            position: relative;
+            color: $color-neutral;
+            padding-top: 0px;
+            text-shadow: 5px 5px 5px $color-black;
+            margin-bottom: 100px;
+
+            &::after {
+                content: "";
+                position: absolute !important;
+                bottom: -20px !important;
+                left: 50% !important;
+                transform: translate(-50%, -50%);
+                height: 7px !important;
+                width: 30% !important;
+                background-color: $color-second  !important;
+            }
+        }
+    }
+}

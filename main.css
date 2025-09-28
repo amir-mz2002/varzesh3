@@ -1,0 +1,1029 @@
+/* crimson */
+@-webkit-keyframes ball {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+  }
+}
+@keyframes ball {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+  }
+}
+
+@font-face {
+  font-family: iran-sans;
+  src: url(fonts/Iranian-Sans.woff);
+}
+
+* {
+  -webkit-box-sizing: border-box !important;
+          box-sizing: border-box !important;
+}
+
+a {
+  text-decoration: none !important;
+  color: inherit !important;
+  display: inline-block !important;
+}
+
+body {
+  margin: 0 !important;
+  font-family: iran-sans !important;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  padding: 5px 0;
+  background: white;
+  z-index: 99;
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03), 0 3px 6px rgba(0, 0, 0, 0.06);
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03), 0 3px 6px rgba(0, 0, 0, 0.06);
+  background-image: url(img/ok-ok.jpg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: repeat;
+  -webkit-filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
+          filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
+}
+
+header nav.navbar .container-fluid {
+  padding: 5px 0;
+}
+
+header nav.navbar .container-fluid div.color {
+  background-repeat: repeat;
+  background-position: center;
+  background-size: contain;
+  height: 100%;
+  z-index: 200;
+}
+
+@media screen and (min-width: 800px) {
+  header nav.navbar .container-fluid div.color {
+    width: 2%;
+  }
+}
+
+@media screen and (min-width: 850px) {
+  header nav.navbar .container-fluid div.color {
+    width: 8%;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  header nav.navbar .container-fluid div.color {
+    width: 13%;
+  }
+}
+
+@media screen and (min-width: 988px) {
+  header nav.navbar .container-fluid div.color {
+    width: 23%;
+  }
+}
+
+@media screen and (min-width: 1086px) {
+  header nav.navbar .container-fluid div.color {
+    width: 30%;
+  }
+}
+
+@media screen and (min-width: 1173px) {
+  header nav.navbar .container-fluid div.color {
+    width: 35%;
+  }
+}
+
+@media screen and (min-width: 1260px) {
+  header nav.navbar .container-fluid div.color {
+    width: 40%;
+  }
+}
+
+header nav.navbar .container-fluid .collapse .navbar-nav .nav-item {
+  padding: 0 10px;
+}
+
+@media screen and (max-width: 1200px) {
+  header nav.navbar .container-fluid .collapse .navbar-nav .nav-item {
+    padding: 0 8px;
+  }
+}
+
+@media screen and (max-width: 1072px) {
+  header nav.navbar .container-fluid .collapse .navbar-nav .nav-item {
+    padding: 0 5px;
+  }
+}
+
+@media screen and (max-width: 872px) {
+  header nav.navbar .container-fluid .collapse .navbar-nav .nav-item {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 767.9px) {
+  header nav.navbar .container-fluid .collapse .navbar-nav .nav-item {
+    background-color: white !important;
+  }
+}
+
+header nav.navbar .container-fluid .collapse .navbar-nav .nav-item #active {
+  color: #dc143c !important;
+}
+
+header nav.navbar .container-fluid .collapse .navbar-nav .nav-item #active:hover::after {
+  width: 0;
+}
+
+header nav.navbar .container-fluid .collapse .navbar-nav .nav-item .nav-link {
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  font-weight: 900;
+  text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.1) !important;
+}
+
+header nav.navbar .container-fluid .collapse .navbar-nav .nav-item .nav-link::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background-color: #dc143c;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+}
+
+header nav.navbar .container-fluid .collapse .navbar-nav .nav-item .nav-link:hover {
+  color: black;
+}
+
+header nav.navbar .container-fluid .collapse .navbar-nav .nav-item .nav-link:hover::after {
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(transparent), color-stop(transparent), color-stop(transparent), color-stop(transparent), color-stop(transparent), color-stop(transparent), color-stop(transparent), color-stop(transparent), color-stop(transparent), to(#dc143c));
+  background: linear-gradient(transparent, transparent, transparent, transparent, transparent, transparent, transparent, transparent, transparent, transparent, #dc143c);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  z-index: 0;
+}
+
+@media screen and (max-width: 768px) {
+  header nav.navbar .container-fluid .collapse .navbar-nav .nav-item .nav-link:hover::after {
+    display: none;
+  }
+}
+
+footer {
+  background-image: url(img/images.jpg);
+  background-repeat: repeat;
+  background-size: cover;
+}
+
+@media screen and (max-width: 767.9px) {
+  footer {
+    background-image: none;
+    background-color: white;
+  }
+}
+
+footer div {
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  padding: 90px 0;
+  background-image: -webkit-gradient(linear, right top, left top, from(rgba(220, 20, 60, 0.6)), color-stop(rgba(0, 0, 0, 0.6)), to(rgba(0, 123, 167, 0.6)));
+  background-image: linear-gradient(to left, rgba(220, 20, 60, 0.6), rgba(0, 0, 0, 0.6), rgba(0, 123, 167, 0.6));
+  height: 100%;
+}
+
+footer div ul li {
+  color: white;
+}
+
+footer div ul .head {
+  font-weight: 900 !important;
+  font-size: 20px !important;
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03), 0 3px 6px rgba(0, 0, 0, 0.06);
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03), 0 3px 6px rgba(0, 0, 0, 0.06);
+}
+
+footer div ul a {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+@media screen and (min-width: 767.9px) {
+  footer div ul a:hover {
+    color: white !important;
+    background-color: #dc143c;
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+}
+
+div.top-button {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  right: 2%;
+  bottom: 2%;
+  background-color: #007ba7;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 20;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+          box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+div.top-button:hover {
+  background-color: white;
+}
+
+div.top-button:hover i {
+  color: #dc143c;
+}
+
+div.top-button i {
+  font-size: 27px;
+  color: white;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+div.top-button:hover i {
+  color: #ff1f59;
+}
+
+/* ---------- */
+@media screen and (max-width: 1280px) {
+  div.top-button {
+    width: 40px;
+    height: 40px;
+    right: 1%;
+    bottom: 1%;
+  }
+  div.top-button i {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  div.top-button {
+    width: 30px;
+    height: 30px;
+    right: 1%;
+    bottom: 1%;
+  }
+  div.top-button i {
+    font-size: 18px;
+  }
+}
+
+section.slid-and-news div.carousel div.carousel-indicators button {
+  background-color: white !important;
+  height: 22px !important;
+}
+
+section.slid-and-news div.carousel div.carousel-inner div.carousel-item div.carousel-caption {
+  text-shadow: 5px 5px 5px black;
+  background-image: radial-gradient(transparent, #007ba7);
+  color: white;
+  cursor: pointer;
+}
+
+section.slid-and-news div.carousel div.carousel-inner div.carousel-item div.carousel-caption p {
+  font-weight: 900;
+}
+
+section.slid-and-news div.news div.accordion div.accordion-item h2.accordion-header button {
+  font-size: 19px !important;
+}
+
+section.slid-and-news div.news div.accordion div.accordion-item div.accordion-body {
+  height: 208px;
+  overflow: auto;
+  background-color: #f2f2f2;
+}
+
+section.slid-and-news div.news div.accordion div.accordion-item div.accordion-body ul {
+  list-style: url(img/kjh.png);
+}
+
+section.slid-and-news div.news div.accordion div.accordion-item div.accordion-body ul li a {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  border-bottom: 1px solid #26408B;
+}
+
+@media screen and (max-width: 500px) {
+  section.slid-and-news div.news div.accordion div.accordion-item div.accordion-body ul li a {
+    font-size: 12px;
+    font-weight: 900;
+  }
+}
+
+section.slid-and-news div.news div.accordion div.accordion-item div.accordion-body ul li a:hover {
+  color: #dc143c !important;
+}
+
+@media screen and (max-width: 576px) {
+  section.slid-and-news div.news div.accordion div.accordion-item div.accordion-body ul li a:hover {
+    color: inherit !important;
+  }
+}
+
+section.slid-and-news div.news div.accordion div.accordion-item button.accordion-button {
+  background-color: #dc143c;
+  color: white !important;
+  font-weight: 900;
+  outline: 0 !important;
+  border: none !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+section.slid-and-news div.news div.accordion div.accordion-item button.accordion-button::after {
+  color: #dc143c !important;
+  background-color: white !important;
+}
+
+div.empty-color {
+  width: 100% !important;
+  height: 4px !important;
+  background-image: -webkit-gradient(linear, right top, left top, from(transparent), color-stop(#F8BA06), color-stop(#E74436), to(transparent));
+  background-image: linear-gradient(to left, transparent, #F8BA06, #E74436, transparent);
+}
+
+section.category div.container-xl ul.nav li {
+  -webkit-box-shadow: rgba(0, 123, 167, 0.25) 0px 30px 60px -12px inset, rgba(0, 123, 167, 0.3) 0px 18px 36px -18px inset;
+          box-shadow: rgba(0, 123, 167, 0.25) 0px 30px 60px -12px inset, rgba(0, 123, 167, 0.3) 0px 18px 36px -18px inset;
+}
+
+section.category div.container-xl ul.nav li i {
+  color: black !important;
+}
+
+section.category div.container-xl ul.nav li a {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+section.category div.container-xl ul.nav li a:hover {
+  letter-spacing: 1.5px;
+}
+
+section.category div.container-xl ul.nav li:hover i {
+  -webkit-animation: ball 1s infinite alternate;
+          animation: ball 1s infinite alternate;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  color: #dc143c !important;
+}
+
+section.category div.container-xl ul.nav li div.dropdown button.btn {
+  background-color: #f2f2f2 !important;
+  color: black;
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -3px 6px 0px inset;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -3px 6px 0px inset;
+}
+
+section.daakheli {
+  background-image: url(img/black.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding-bottom: 300px !important;
+}
+
+@media screen and (min-width: 992px) {
+  section.daakheli .position-for-link {
+    position: relative !important;
+    bottom: 90px !important;
+  }
+}
+
+section.daakheli div.title- h3 {
+  font-size: 32px !important;
+  font-weight: 800;
+  text-align: center;
+  position: relative;
+  color: #f2f2f2;
+  padding-top: 0px;
+  text-shadow: 5px 5px 5px black;
+  margin-bottom: 100px;
+}
+
+section.daakheli div.title- h3::after {
+  content: "";
+  position: absolute !important;
+  bottom: -20px !important;
+  left: 50% !important;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  height: 7px !important;
+  width: 30% !important;
+  background-color: #dc143c !important;
+}
+
+@media screen and (max-width: 767.9px) {
+  section.daakheli div.goal-table {
+    margin-bottom: 60px !important;
+  }
+}
+
+section.daakheli div.goal-table div.goal-table-item {
+  background-color: #f2f2f2;
+}
+
+section.daakheli div.goal-table div.goal-table-item div.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.daakheli div.goal-table div.goal-table-item div.image-player {
+  width: 8%;
+}
+
+section.daakheli div.goal-table div.goal-table-item div.image-player img {
+  border-radius: 50%;
+  width: 100%;
+  display: block;
+}
+
+section.daakheli div.goal-table div.goal-table-item div.name-team {
+  width: 80%;
+  text-align: center;
+}
+
+section.daakheli div.goal-table div.goal-table-item div.name-team span.team {
+  color: white;
+  font-weight: 900;
+  background-color: #007ba7;
+  padding: 2px 3px;
+  cursor: pointer;
+  -webkit-transition: 00.5s;
+  transition: 00.5s;
+}
+
+section.daakheli div.goal-table div.goal-table-item div.name-team span.team:hover {
+  background-color: #dc143c !important;
+}
+
+section.daakheli div.goal-table div.goal-table-item div.goal {
+  width: 10%;
+  text-align: left !important;
+}
+
+section.daakheli div.goal-table div.goal-table-item div.goal span {
+  background-color: #dc143c;
+  padding: 5px;
+  color: white;
+}
+
+section.daakheli div.pass-table div.pass-table-item {
+  background-color: #f2f2f2;
+}
+
+section.daakheli div.pass-table div.pass-table-item div.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.daakheli div.pass-table div.pass-table-item div.image-player {
+  width: 8%;
+}
+
+section.daakheli div.pass-table div.pass-table-item div.image-player img {
+  border-radius: 50%;
+  width: 100%;
+  display: block;
+}
+
+section.daakheli div.pass-table div.pass-table-item div.name-team {
+  width: 80%;
+  text-align: center;
+}
+
+section.daakheli div.pass-table div.pass-table-item div.name-team span.team {
+  color: white;
+  font-weight: 900;
+  background-color: #007ba7;
+  padding: 2px 3px;
+  cursor: pointer;
+  -webkit-transition: 00.5s;
+  transition: 00.5s;
+}
+
+section.daakheli div.pass-table div.pass-table-item div.name-team span.team:hover {
+  background-color: #dc143c !important;
+}
+
+section.daakheli div.pass-table div.pass-table-item div.pass {
+  width: 10%;
+  text-align: left !important;
+}
+
+section.daakheli div.pass-table div.pass-table-item div.pass span {
+  background-color: #dc143c;
+  padding: 5px;
+  color: white;
+}
+
+section.volleyball {
+  background-image: url(img/valboena.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding-bottom: 50px !important;
+}
+
+section.volleyball div.title- h3 {
+  font-size: 32px !important;
+  font-weight: 800;
+  text-align: center;
+  position: relative;
+  color: #f2f2f2;
+  padding-top: 0px;
+  text-shadow: 5px 5px 5px black;
+  margin-bottom: 100px;
+}
+
+section.volleyball div.title- h3::after {
+  content: "";
+  position: absolute !important;
+  bottom: -20px !important;
+  left: 50% !important;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  height: 7px !important;
+  width: 30% !important;
+  background-color: #dc143c !important;
+}
+
+section.volleyball div.content-volleyball-games-table div.set-table {
+  background-color: #007ba7;
+}
+
+section.volleyball div.content-volleyball-games-table div.content-volleyball-games-table-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #f2f2f2;
+  border-bottom: 2px solid black;
+}
+
+section.volleyball div.content-volleyball-games-table div.content-volleyball-games-table-item div.team-volleyball {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 20%;
+  background-color: #007ba7;
+  padding: 2px 0;
+}
+
+section.volleyball div.content-volleyball-games-table div.content-volleyball-games-table-item div.team-volleyball span {
+  font-size: 15px;
+  color: white !important;
+}
+
+section.volleyball div.content-volleyball-games-table div.content-volleyball-games-table-item div.score-volleyball {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 20%;
+  text-align: center;
+  background-color: #dc143c;
+}
+
+section.volleyball div.content-volleyball-games-table div.content-volleyball-games-table-item div.score-volleyball span {
+  color: white;
+}
+
+section.volleyball div.content-volleyball-games-table div.content-volleyball-games-table-item div.container-set-table {
+  width: 60%;
+  text-align: center;
+}
+
+@media screen and (max-width: 767.9px) {
+  section.volleyball div.content-volleyball-games-table div.goal-table {
+    margin-bottom: 60px !important;
+  }
+}
+
+section.volleyball div.content-volleyball-games-table div.goal-table div.goal-table-item {
+  background-color: #f2f2f2;
+}
+
+section.volleyball div.content-volleyball-games-table div.goal-table div.goal-table-item div.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.volleyball div.content-volleyball-games-table div.goal-table div.goal-table-item div.image-player {
+  width: 8%;
+}
+
+section.volleyball div.content-volleyball-games-table div.goal-table div.goal-table-item div.image-player img {
+  border-radius: 50%;
+  width: 100%;
+  display: block;
+}
+
+section.volleyball div.content-volleyball-games-table div.goal-table div.goal-table-item div.name-team {
+  width: 80%;
+  text-align: center;
+}
+
+section.volleyball div.content-volleyball-games-table div.goal-table div.goal-table-item div.name-team span.team {
+  color: white;
+  font-weight: 900;
+  background-color: #007ba7;
+  padding: 2px 3px;
+  cursor: pointer;
+  -webkit-transition: 00.5s;
+  transition: 00.5s;
+}
+
+section.volleyball div.content-volleyball-games-table div.goal-table div.goal-table-item div.name-team span.team:hover {
+  background-color: #dc143c !important;
+}
+
+section.volleyball div.content-volleyball-games-table div.goal-table div.goal-table-item div.goal {
+  width: 10%;
+  text-align: left !important;
+}
+
+section.volleyball div.content-volleyball-games-table div.goal-table div.goal-table-item div.goal span {
+  background-color: #dc143c;
+  padding: 5px;
+  color: white;
+}
+
+section.volleyball div.content-volleyball-games-table div.pass-table div.pass-table-item {
+  background-color: #f2f2f2;
+}
+
+section.volleyball div.content-volleyball-games-table div.pass-table div.pass-table-item div.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.volleyball div.content-volleyball-games-table div.pass-table div.pass-table-item div.image-player {
+  width: 8%;
+}
+
+section.volleyball div.content-volleyball-games-table div.pass-table div.pass-table-item div.image-player img {
+  border-radius: 50%;
+  width: 100%;
+  display: block;
+}
+
+section.volleyball div.content-volleyball-games-table div.pass-table div.pass-table-item div.name-team {
+  width: 80%;
+  text-align: center;
+}
+
+section.volleyball div.content-volleyball-games-table div.pass-table div.pass-table-item div.name-team span.team {
+  color: white;
+  font-weight: 900;
+  background-color: #007ba7;
+  padding: 2px 3px;
+  cursor: pointer;
+  -webkit-transition: 00.5s;
+  transition: 00.5s;
+}
+
+section.volleyball div.content-volleyball-games-table div.pass-table div.pass-table-item div.name-team span.team:hover {
+  background-color: #dc143c !important;
+}
+
+section.volleyball div.content-volleyball-games-table div.pass-table div.pass-table-item div.pass {
+  width: 10%;
+  text-align: left !important;
+}
+
+section.volleyball div.content-volleyball-games-table div.pass-table div.pass-table-item div.pass span {
+  background-color: #dc143c;
+  padding: 5px;
+  color: white;
+}
+
+@media screen and (min-width: 992px) {
+  section.volleyball .position-for-link {
+    position: relative !important;
+    bottom: 100px !important;
+  }
+}
+
+/* common between sections */
+@media screen and (max-width: 767.9px) {
+  div.games-table {
+    margin-bottom: 60px !important;
+  }
+}
+
+div.games-table div.day-of-week {
+  background-color: black !important;
+  color: white !important;
+  text-align: center;
+}
+
+div.games-table div.day-of-week h5 {
+  font-size: 16px;
+  margin: 0;
+}
+
+div.games-table div.content-games-table div.content-games-table-item {
+  background-color: #f2f2f2;
+  border: 3px solid #dc143c;
+  border-top: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  padding: 5px 0;
+}
+
+div.games-table div.content-games-table div.content-games-table-item .score {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background-color: #dc143c;
+  color: white;
+}
+
+div.games-table div.content-games-table div.content-games-table-item .time {
+  background-color: white !important;
+  color: black !important;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  border-bottom: 2px solid black;
+}
+
+div.games-table div.content-games-table div.content-games-table-item .left {
+  position: absolute;
+  left: 5px;
+  bottom: 50%;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+div.games-table div.content-games-table div.content-games-table-item .left:hover {
+  color: white;
+  background-color: #dc143c;
+}
+
+div.games-table div.content-games-table div.content-games-table-item .right {
+  -webkit-transform: translateX(-5px) !important;
+          transform: translateX(-5px) !important;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+div.games-table div.content-games-table div.content-games-table-item .right:hover {
+  color: white;
+  background-color: #dc143c;
+}
+
+div.games-table div.content-games-table .without-border {
+  border-bottom: none !important;
+}
+
+div.title-table {
+  -webkit-backdrop-filter: blur(5px) !important;
+          backdrop-filter: blur(5px) !important;
+}
+
+div.title-table h4 {
+  font-size: 23px;
+  font-weight: 900;
+  color: black;
+  position: relative;
+  text-align: center;
+  z-index: 3;
+}
+
+div.title-table h4::after {
+  content: "";
+  width: 100%;
+  height: 200%;
+  background-color: #f2f2f2;
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 50%);
+          transform: translate(-50%, 50%);
+  z-index: -1;
+}
+
+div.title-table h4.world-cup {
+  color: white !important;
+}
+
+div.title-table h4.world-cup::after {
+  background-image: -webkit-gradient(linear, right top, left top, from(#dc143c), color-stop(black), to(#007ba7)) !important;
+  background-image: linear-gradient(to left, #dc143c, black, #007ba7) !important;
+}
+
+form {
+  -webkit-backdrop-filter: blur(5px) !important;
+          backdrop-filter: blur(5px) !important;
+}
+
+form div.select-option select {
+  background-color: #dc143c !important;
+  border: none;
+  color: white !important;
+}
+
+.border-three {
+  border: 3px solid #dc143c !important;
+  border-top: none !important;
+}
+
+@media screen and (max-width: 767.9px) {
+  div.league-table {
+    margin-bottom: 60px !important;
+  }
+}
+
+div.league-table div.day-of-week {
+  background-color: black !important;
+  color: white !important;
+  text-align: center;
+}
+
+div.league-table div.day-of-week h5 {
+  font-size: 16px;
+  margin: 0;
+}
+
+div.league-table table {
+  width: 100%;
+}
+
+div.league-table table tr.head-table {
+  background-color: black;
+  border-left: 3px solid black;
+  border-right: 3px solid black;
+}
+
+div.league-table table tr.head-table th {
+  color: white;
+  text-align: center !important;
+}
+
+div.league-table table tr.head-table .rank-table {
+  width: 10%;
+  background-color: #007ba7;
+}
+
+div.league-table table tr.head-table .team-table {
+  width: 55%;
+}
+
+div.league-table table tr.head-table .game-table {
+  width: 17.5%;
+}
+
+div.league-table table tr.head-table .score-table {
+  width: 17.5%;
+  background-color: #dc143c;
+}
+
+div.league-table table tr {
+  background-color: #f2f2f2;
+}
+
+div.league-table table tr td.team-table {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+div.league-table table tr td.team-table:hover {
+  color: white;
+  background-color: #dc143c;
+}
+
+div.league-table div.content-league-table div.content-league-table-item {
+  background-color: white;
+  border: 3px solid #dc143c;
+  border-top: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+div.league-table div.content-league-table .without-border {
+  border-bottom: none !important;
+}
+
+section.khaareji {
+  background-image: url(img/tedi-1.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding-bottom: 150px;
+}
+
+@media screen and (min-width: 992px) {
+  section.khaareji .position-for-link {
+    position: relative !important;
+    bottom: 82.4px !important;
+  }
+}
+
+section.khaareji div.title- h3 {
+  font-size: 32px !important;
+  font-weight: 800;
+  text-align: center;
+  position: relative;
+  color: #f2f2f2;
+  padding-top: 0px;
+  text-shadow: 5px 5px 5px black;
+  margin-bottom: 100px;
+}
+
+section.khaareji div.title- h3::after {
+  content: "";
+  position: absolute !important;
+  bottom: -20px !important;
+  left: 50% !important;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  height: 7px !important;
+  width: 30% !important;
+  background-color: #dc143c !important;
+}
+/*# sourceMappingURL=main.css.map */
